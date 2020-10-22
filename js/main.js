@@ -55,7 +55,7 @@ async function initMovieSearch(){
 
 async function getMovieJson(props) {
     try {
-        let result = await fetch(`http://www.omdbapi.com/?s=${props}&apikey=1fda205e&`)
+        let result = await fetch(`https://www.omdbapi.com/?s=${props}&apikey=1fda205e&`)
         result = await result.json();
         return result;
     } catch (error) {
